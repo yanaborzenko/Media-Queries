@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
+/* Global styles */
+body {
+    background: linear-gradient(to bottom, rgba(23, 12, 33, 1), rgba(185, 141, 206, 0.75), rgba(54, 25, 68, 0.77));
+    height: auto;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Center text globally */
+}
+
+.logo {
+    position: relative;
+    height: 7vh;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+img{
+    height: 18vw;
+    width: auto;
+}
+
+.center-text-both {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.different-color {
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+    color: rgb(240, 194, 91);
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.img-container1 {
+    flex: 3;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center; /* Center text */
+}
+
+.img-container2 {
+    flex: 2;
+    margin-top: -20px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center; /* Center text */
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center; /* Center text */
+}
+
+.arrow {
+    text-align: center;
+    position: relative;
+    margin-top: -7.5%;
+}
+
+/* Media queries for responsiveness */
+
+/* Laptops */
+@media (min-width: 1024px) {
+    .logo {
+        height: 6vh;
+        margin-top: 3%;
+    }
+
+    h1 {
+        font-size: 4vw;
+        margin-bottom: 3vh;
+    }
+
+    .center-text-both {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-top: 3vh;
+    }
+
+    .img-container1, .img-container2 {
+        margin-left: 2vw;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .logo {
+        height: 5vh;
+        margin-top: 4%;
+    }
+
+    h1 {
+        font-size: 5vw;
+        margin-bottom: 4vh;
+    }
+
+    .center-text-both {
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-top: 4vh;
+    }
+
+    .img-container1, .img-container2 {
+        margin-left: 3vw;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .logo {
+        height: 4vh;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 6vw;
+        margin-bottom: 5vh;
+    }
+
+    .center-text-both {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: 5vh;
+    }
+
+    .img-container1, .img-container2 {
+        margin-left: 4vw;
+        margin-bottom: 10%;
+    }
+
+    .arrow {
+        margin-top: -10%;
+    }
+}

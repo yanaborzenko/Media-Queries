@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
+/* Global styles */
+body {
+    background: linear-gradient(180deg, #170C21 0%, rgba(185, 141, 206, 0.75) 46.83%, rgba(54, 25, 68, 0.77) 100%);
+    height: auto;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Moved font-family to the body for consistency */
+    text-align: center; /* Center text globally */
+}
+
+.logo {
+    position: relative;
+    height: 7vh;
+    margin-top: 5%;
+    margin-left: 83%;
+}
+
+.text-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-container h1 {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin: 0;
+    margin-bottom: 0;
+    background-color: white;
+    flex-direction: row;
+    flex: 3;
+}
+
+.column {
+    display: flex;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column h1 {
+    font-weight: 500;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+.column p {
+    font-size: x-large;
+    color: black;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+
+/* Laptops */
+@media (min-width: 1024px) {
+    .logo {
+        height: 6vh;
+        margin-top: 3%;
+        margin-left: 80%;
+    }
+
+    .text-container h1 {
+        font-size: 3vw;
+    }
+
+    .text-container p {
+        font-size: 2vw;
+    }
+
+    .column h1 {
+        font-size: 3vw;
+    }
+
+    .column p {
+        font-size: 2vw;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .logo {
+        height: 5vh;
+        margin-top: 4%;
+        margin-left: 75%;
+    }
+
+    .text-container h1 {
+        font-size: 4vw;
+    }
+
+    .text-container p {
+        font-size: 3vw;
+    }
+
+    .column h1 {
+        font-size: 4vw;
+    }
+
+    .column p {
+        font-size: 3vw;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .logo {
+        height: 4vh;
+        margin-top: 5%;
+        margin-left: 70%;
+    }
+
+    .text-container h1 {
+        font-size: 5vw;
+    }
+
+    .text-container p {
+        font-size: 4vw;
+        margin-bottom: 10%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .column h1 {
+        font-size: 6vw;
+    }
+
+    .column p {
+        font-size: 5vw;
+    }
+}

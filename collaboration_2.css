@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
+/* Global styles */
+body {
+    background: linear-gradient(180deg, #170C21 0%, rgba(185, 141, 206, 0.75) 0.01%, rgba(54, 25, 68, 0.82) 42.33%, rgba(185, 141, 206, 0.75) 100%, rgba(185, 141, 206, 0.1) 100.01%);
+    height: auto;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Moved font-family to the body for consistency */
+    text-align: center; /* Center text globally */
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-overlay {
+    text-align: center;
+    position: absolute; /* Position the text absolutely */
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
+    width: 65%; /* Adjusted width for better fit */
+    color: #361944; /* Set text color */
+    padding: 10px; /* Add padding for better readability */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.text-overlay h3 {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.text-overlay p {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: xx-large;
+    color: white;
+    font-weight: 400;
+}
+
+.rounded-rectangle {
+    margin-top: 8%;
+    margin-left: 17vw;
+    width: 65%; /* Set width */
+    height: 10%; /* Set height */
+    border-radius: 150px; /* Set border radius */
+    border: 2px solid #000; /* Set border */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    height: 7vh;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: -10%;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-end;
+    flex-direction: row; /* Ensure items are in a row */
+}
+
+.corner-img {
+    position: relative;
+    top: 17vh;
+}
+
+.text {
+    margin-bottom: 14%;
+    width: 15%;
+    font-weight: 600;
+    font-size: medium;
+    color: white;
+}
+
+/* Media queries for responsiveness */
+
+/* Laptops */
+@media (min-width: 1024px) {
+    .text-overlay {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        width: 70%; /* Adjusted width for better fit */
+    }
+
+    h2 {
+        font-size: 2vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    .rounded-rectangle {
+        width: 60%;
+        height: 8%;
+    }
+
+    .logo {
+        height: 6vh;
+        margin-bottom: 4%;
+    }
+
+    .container {
+        margin-top: -8%;
+    }
+
+    .corner-img {
+        top: 15vh;
+    }
+
+    .text {
+        width: 12%;
+        font-size: 1.5vw;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .text-overlay {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 80%; /* Adjusted width for better fit */
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    .rounded-rectangle {
+        width: 70%;
+        height: 10%;
+    }
+
+    .logo {
+        height: 5vh;
+        margin-bottom: 4%;
+    }
+
+    .container {
+        margin-top: -8%;
+    }
+
+    .corner-img {
+        top: 15vh;
+    }
+
+    .text {
+        width: 14%;
+        font-size: 2vw;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .text-overlay {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90%; /* Adjusted width for better fit */
+    }
+
+    h2 {
+        font-size: 3vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .rounded-rectangle {
+        margin-left: 10vw;
+        width: 80%;
+        height: 12%;
+    }
+
+    .logo {
+        height: 4vh;
+        margin-bottom: 5%;
+    }
+
+    .container {
+        margin-top: -10%;
+    }
+
+    .corner-img {
+        top: 17vh;
+    }
+
+    .text {
+        width: 18%;
+        font-size: 3vw;
+    }
+}
